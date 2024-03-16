@@ -1,1 +1,46 @@
-it's working
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<style>
+html,body{width:100%;margin:0}html{height:100%}body{min-height:100%;padding:20px;box-sizing:border-box}p{word-break:break-all}@media (max-width:500px){h1{margin-top:80px}}.flex{display:flex;flex-direction:column;justify-content:center;align-items:center}.block{display:block;position:relative}.url{font-size:18px;padding:10px 10px 10px 5px;position:relative;width:300px;border:none;border-bottom:1px solid #bfbfbf}input:focus{outline:none}.bar{content:'';height:2px;width:100%;bottom:0;position:absolute;background:#6B69D6;transition:0.2s ease transform;-moz-transition:0.2s ease transform;-webkit-transition:0.2s ease transform;transform:scaleX(0)}.url:focus~.bar{transform:scaleX(1)}.btn{line-height:38px;background-color:#6B69D6;color:#fff;white-space:nowrap;text-align:center;font-size:14px;border:none;border-radius:2px;cursor:pointer;padding:5px;width:160px;margin:30px 0;border-radius:10px}.tips,.example{color:#7b7b7b;position:relative;align-self:flex-start;margin-left:2.5em}.tips>p:first-child::before{position:absolute;left:-2.5em;content:'PS：';color:#7b7b7b}
+</style>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg width='335' height='330' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' overflow='hidden'%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect x='2032' y='1073' width='335' height='330'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip0)' transform='translate(-2032 -1073)'%3E%3Cpath d='M2199.64 1073C2106.94 1073 2032 1148.62 2032 1242.18 2032 1316.97 2080.02 1380.27 2146.63 1402.68 2154.95 1404.36 2158.01 1399.04 2158.01 1394.56 2158.01 1390.64 2157.73 1377.19 2157.73 1363.19 2111.1 1373.27 2101.39 1343.02 2101.39 1343.02 2093.89 1323.41 2082.79 1318.37 2082.79 1318.37 2067.53 1308.01 2083.9 1308.01 2083.9 1308.01 2100.83 1309.13 2109.71 1325.37 2109.71 1325.37 2124.7 1351.14 2148.85 1343.86 2158.56 1339.38 2159.95 1328.45 2164.39 1320.89 2169.11 1316.69 2131.92 1312.77 2092.78 1298.2 2092.78 1233.22 2092.78 1214.73 2099.44 1199.61 2109.99 1187.84 2108.33 1183.64 2102.5 1166.27 2111.66 1143.03 2111.66 1143.03 2125.81 1138.54 2157.73 1160.39 2171.39 1156.69 2185.48 1154.8 2199.64 1154.79 2213.79 1154.79 2228.22 1156.75 2241.55 1160.39 2273.47 1138.54 2287.62 1143.03 2287.62 1143.03 2296.78 1166.27 2290.95 1183.64 2289.28 1187.84 2300.11 1199.61 2306.49 1214.73 2306.49 1233.22 2306.49 1298.2 2267.36 1312.49 2229.89 1316.69 2236 1322.01 2241.27 1332.09 2241.27 1348.06 2241.27 1370.75 2240.99 1388.96 2240.99 1394.56 2240.99 1399.04 2244.05 1404.36 2252.37 1402.68 2318.98 1380.27 2367 1316.97 2367 1242.18 2367.27 1148.62 2292.06 1073 2199.64 1073Z' fill='%236B69D6' fill-rule='evenodd'/%3E%3C/g%3E%3C/svg%3E">
+</head>
+<body>
+    <!-- Your website content here -->
+</body>
+</html>
+    <script>
+        function toSubmit(e) {
+            e.preventDefault()
+            window.open("/" + document.getElementsByName('q')[0].value);
+            return false
+        }
+    </script>
+    <title>Github 镜像加速</title>
+</head>
+
+<body class="flex">
+    <h1 style="margin-bottom: 50px">Github 镜像加速</h1>
+    <form action="" method="get" style="padding-bottom: 40px" target="_blank" class="flex" onsubmit="toSubmit(event)">
+        <label class="block" style="width: fit-content">
+            <input class="block url" name="q" type="text" placeholder="输入 Github 文件链接"
+                pattern="^((https|http):\/\/)?(github\.com\/.+?\/.+?\/(?:releases|archive|blob|raw|suites)|((?:raw|gist)\.(?:githubusercontent|github)\.com))\/.+$"
+                required>
+            <div class="bar"></div>
+        </label>
+        <input class="block btn" type="submit" value="下载">
+        <br>
+        <div class="tips">
+            <p>本站支持 Release, Archive, 文件以及 Clone. 暂不支持文件夹
+            <p>
+            <p></p>
+        </div>
+    </form>
+</body>
+
+</html>
